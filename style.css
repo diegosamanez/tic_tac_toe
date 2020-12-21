@@ -1,0 +1,70 @@
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+    background: #000;
+}
+h1, p {
+    color: white;
+    margin: 1em 0;
+    text-align: center;
+}
+p{
+    margin: .4em;
+}
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.game-container {
+    box-sizing: border-box;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    width: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: pointer;
+    background: #1b1a1c;
+}
+.game div {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    flex: 1 1 33.3%;
+    border: 1px solid white;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+.winnerMessage{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	visibility: visible;
+	transition: all .3s ease-in-out;
+	background-color: rgba(0,0,0,.7);
+}
+.winnerMessage .play{
+	margin:0;
+	border:1px solid;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color:orange;
+	cursor: pointer;
+}
